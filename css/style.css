@@ -1,0 +1,1833 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* outline: 2px solid red; */
+
+    /* box-sizing: border-box; */
+}
+/* body{
+  height: 6000px;
+} */
+/* ....................................................الهيدر الاول الاساسي...................... */
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(37, 10, 215, 0.977);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index:2000;
+    
+   }
+   .logo{
+    margin-left: 100px;
+    border-radius: 50%;
+   }
+   .list1{
+    margin-right: 200px;
+    float: right;
+    position: relative;
+   }
+   .list1 li::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2%;
+    bottom:  0;
+    left: 0;
+    background-color: red;
+    transition: 1s;
+   }
+   .list1 li:hover::after{
+    width: 100%;
+    height: 2%;
+   }
+ .list1 li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 35px;
+    font-size: 25px;
+    /* margin-top: px; */
+    position: relative;
+    padding: 15px;
+ }  
+ .list1 li a{
+    color: white;
+    text-decoration: none;
+ }
+ .list1 li:hover{
+    border-bottom: 2px solid red;
+    opacity: .7;
+    
+    transition: 1s;
+    background-color: rgba(255, 255, 255, 0.285);
+}
+/* .....................................................الهيدر التاني المخفي......................... */
+.header-2{
+  width: 100%;
+  height: 70px;
+  background-color: rgba(37, 10, 215, 0.977);
+  margin-top: 60px;
+  opacity: 0;
+  position: fixed;
+  z-index: 2000;
+  transition: 1s;
+}
+.header-2:hover{
+  opacity: 1;
+  opacity: .8;
+
+}
+.header-2 i{
+  color: white;
+  font-size: 25px;
+  float:left ;
+  margin-left: 60px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.header-2 p{
+  color: white;
+  float: left;
+  font-size: 20px;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+ .header-2 span{
+  color: white;
+  font-size: 20px;
+  margin-top: 25px;
+  margin-left: 15px;
+  float: left;
+ } 
+ .header-2 input{
+  width: 28%;
+  height: 50px;
+  border: 0;  
+  border-radius: 10px;
+  background-color: white;
+  margin-right: 240px;
+  float: right;
+  margin-top: 5px;
+ }
+ /* .......................................................خلفيه الموقع....................................... */
+ .perant{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/i2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+ } 
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50%);
+    color: white;
+    text-align: center;
+}
+.title{
+    font-size: 50px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+.title .nb{
+  color: cornflowerblue;
+}
+.p1{
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    margin-bottom: 20px;
+}
+.p1 span{
+  color: red;
+}
+.btn{
+    width: 150px;
+    height: 45px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 19px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.btn2{
+    background-color: blue;
+    color: white;
+   }
+   .btn:hover{
+    opacity: .7;
+   }
+   .title span{
+    color:red;
+   }
+
+   /* ............................................... offer من اول العنوان الاول اللي في  ............................*/
+   .title2{
+    text-align: center;
+    color: rgba(0, 0, 255, 0.607);
+    font-size: 30px;
+   }
+   .line{
+    width: 150px;
+    height: 3px;
+    background-color:rgba(0, 0, 255, 0.607) ;
+    margin: auto;
+    border-radius: 50%;
+   }
+   /* .....................................................الي شايل الديف بتاع الاوفررررررر بالافتر والبيفور............. */
+   .contenr{
+    width: 90%;
+    margin: auto;
+    height: 300px;
+    background-color: rgb(154, 148, 148);
+    overflow: auto;
+    /* width: 10%; */
+    border-right: 4px solid rgb(135, 228, 235);
+    border-left: 4px solid rgb(135, 228, 235);
+    position: relative;
+   }
+   .contenr::after{
+    content: "";
+    position: absolute;
+    width:0;
+    height:100% ;
+    top:0 ;
+    right:0 ;
+    background-color: rgb(135, 228, 235);
+    opacity: 0.8;
+    transition: 4s;
+   }
+   .contenr:hover::after{
+    width:100% ;
+    height:100% ;
+   }
+   .contenr::before{
+    content: "";
+    position: absolute;
+    width:0;
+    height:100% ;
+    top:0 ;
+    left: 0 ;
+    background-color: rgb(135, 228, 235);
+    opacity: 0.8;
+    transition: 4s;
+   }
+   .contenr:hover::before{
+    width:100% ;
+    height:100% ;
+   }
+   /* .....................................................اول صوره في الاوفرررررر......................................... */
+   .offer-sale::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:0 ;
+    top:0 ;
+    left:0 ;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+   }
+   .offer-sale:hover::after{
+    width:100% ;
+    height:100% ;
+    border-radius: 20px;
+   }
+  .offer-sale{
+    width: 400px;
+    height: 250px;
+    background-image: url(../images/hh9.jpeg);
+    background-repeat: repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    float: left;
+    margin-right: 60px;
+    margin-top: 25px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 100;
+  }
+  .offer-sale h2{
+    font-size: 25px;
+  }
+  .offer-sale span{
+    color: red;
+    margin-left: 20px;
+  }
+  .offer-sale i{
+    margin-top: 30px;
+  }
+  .offer-text{
+    position: relative;
+    z-index: 60;
+  }
+  .offer-sale a{
+    text-decoration: none;
+  }
+  /* .....................................................الصوره التانيه في الاوفر بالافتر............................... */
+  .offer-sale2{
+    width: 400px;
+    height: 250px;
+    background-image: url(../images/hh9.jpeg);
+    background-repeat: repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    float: left;
+    margin-right: 60px;
+    margin-top: 25px;
+    position: relative;
+    z-index: 111;
+  }
+  .offer-sale2::after{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:0 ;
+    top:0 ;
+    left:0 ;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+  }
+  .offer-sale2:hover::after{
+    width:100% ;
+    height:100% ;
+    border-radius: 20px;
+  }
+  .offer-sale2 h2{
+    font-size: 23px;
+  }
+  .offer-sale2 span{
+    color: rgb(255, 0, 0);
+    margin-left: 20px;
+  }
+  .offer-sale2 i{
+    margin-top: 30px;
+  }
+  .offer-sale2 a{
+    text-decoration: none;
+  }
+  /* ................................................الصوره التالته في الاوفرررررر ................................. */
+  .offer-sale3{
+    width: 400px;
+    height: 250px;
+    background-image: url(../images/hh9.jpeg);
+    background-repeat: repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    float: left;
+    margin-top: 25px;
+    position: relative;
+    z-index: 112;
+  }
+  .offer-sale3::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:0 ;
+    top:0 ;
+    left:0 ;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+  }
+  .offer-sale3:hover::after{
+    width:100% ;
+    height:100% ;
+    border-radius: 20px;
+  }
+  .offer-sale3 h2{
+    font-size: 25px;
+  }
+  .offer-sale3 span{
+    color: red;
+    margin-left: 20px;
+  }
+  .offer-sale3 i{
+    margin-top: 30px;
+  }
+  .offer-sale3 a{
+    text-decoration: none;
+  }
+  /* .............................................................السهم...................................... */
+  .sahm {
+    font-size: 30px;
+    margin-top: 350px;
+    float: right;
+    color: black;
+    background-color: skyblue;
+    border-radius: 50%;
+    position: fixed;
+    margin-left: 1470px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    
+  }
+  
+    
+  /* ......................................................الارقام اللي تحت الصور اللي في الاوفر................ */
+  .namber1{
+    margin-top: 39px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    margin-left: 170px;
+  }
+  .namber2{
+    margin-top: 41px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    margin-left: 170px;
+  }
+  .namber3{
+    margin-top: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    margin-left: 200px;
+  }
+  /* ..................................................................Available..............   اول عنوان*/
+  .title3{
+    text-align: center;
+    color: rgba(3, 3, 255, 0.644);
+    font-size: 45px;
+  }
+  /* ..................................................الخط اللي تحت العنوان........................... */
+  .line3{
+    width: 150px;
+    height: 3px;
+    background-color:rgba(0, 0, 255, 0.614) ;
+    margin: auto;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  /* ..................................................................carمن اول الصور بتاعت ال .................................... */
+  .cars{
+    width: 90%;
+    margin: auto;
+  
+  }
+  /* ......................................................اول صوره وكل معطياطه......................... */
+  .cars1{
+  width: 370px;
+  height:300px;
+  background-image: url(../images/p1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  position: relative;
+  margin-top: -100px;
+ }
+.cars1 .add{
+ font-size: 25px;
+ border: 1px solid grey;
+ border-radius: 50%;
+ color: rgba(128, 128, 128, 0.715);
+ width: 30px;
+ height: 30px;
+ text-align: center;
+ margin-top: 60px;
+ padding: 5px;
+ margin-left: 20px;
+ background-color: white;
+}
+.cars1 .add:hover{
+ color: red;
+ cursor: pointer;
+}
+.cars1 .icon1{
+  color: blue;
+  margin-top: 20px;
+  margin-left: 150px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.cars1 h2{
+ background-color: red;
+ border: 0;
+ border-radius: 20px;
+ width: 60px;
+ font-size: 18px;
+ text-align: center;
+ color: white;
+ float: right;
+ margin-top: 65px;
+margin-right: 20px;
+}
+.cars1 h3{
+ text-align: center;
+ font-size: 30px;
+ color: rgba(0, 0, 255, 0.662);
+ margin-top: 30px;
+ padding: 90px;
+}
+.cars1 p{
+  text-align: center;
+  margin-top: -85px;
+  padding: -150px;
+}
+.car-overlay{
+  background-color: rgba(204, 194, 194, 0.7);
+  opacity: 0;
+  width: 100%;
+  height: 90%;
+  margin-top: -95px;
+  border-radius: 20px;
+  
+}
+.cars1:hover .car-overlay{
+  opacity: 1;
+  transition: 1s;
+}
+/* //////////////////////////////////////////////تاني صوره بكل معطايطها////////////////////////////////*/
+.cars2{
+  width: 370px;
+  height:300px;
+  background-image: url(../images/p4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  position: relative;
+  margin-top: -100px;
+  margin-left: 120px;
+ }
+ .cars2 .al{
+  font-size: 25px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  color: rgba(128, 128, 128, 0.715);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-top: 60px;
+  padding: 5px;
+  margin-left: 20px;
+  background-color: white;
+ }
+ .cars2 .al:hover{
+  color: red;
+  cursor: pointer;
+ }
+ .cars2 .icon2{
+  color: blue;
+  margin-top: 20px;
+  margin-left: 150px;
+  font-size: 25px;
+  cursor: pointer;
+}
+ .cars2 h2{
+  background-color: red;
+  border: 0;
+  border-radius: 20px;
+  width: 60px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  float: right;
+  margin-top: 65px;
+ margin-right: 20px;
+ }
+ .cars2 h3{
+  text-align: center;
+  font-size: 30px;
+  color: rgba(0, 0, 255, 0.662);
+  margin-top: 45px;
+  padding: 90px;
+ }
+ .cars2 p{
+   text-align: center;
+   margin-top: -80px;
+   padding: -150px;
+ }
+ .car-overlay{
+   background-color: rgba(204, 194, 194, 0.7);
+   opacity: 0;
+   width: 100%;
+   height: 90%;
+   margin-top: -95px;
+   border-radius: 20px;
+   
+ }
+ .cars2:hover .car-overlay{
+   opacity: 1;
+   transition: 1s;
+ }
+ /*  ////////////////////////////////////////////////////////////تالته صوره بكل معطيتها/////////////////////////////////*/
+ .cars3{
+  width: 370px;
+  height:300px;
+  background-image: url(../images/b8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  position: relative;
+  margin-top: -50px;
+  margin-left: 120px;
+ }
+ .cars3 .ae{
+  font-size: 25px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  color: rgba(128, 128, 128, 0.715);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px;
+  margin-left: 20px;
+  background-color: white;
+ }
+ .cars3 .ae:hover{
+  color: red;
+  cursor: pointer;
+ }
+ .cars3 .icon3{
+  color: blue;
+  margin-top: 20px;
+  margin-left: 150px;
+  font-size: 25px;
+  cursor: pointer;
+}
+ .cars3 h2{
+  background-color: rgb(31, 208, 31);
+  border: 0;
+  border-radius: 20px;
+  width: 60px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  float: right;
+  margin-top: 15px;
+ margin-right: 20px;
+ }
+ .cars3 h3{
+  text-align: center;
+  font-size: 30px;
+  color: rgba(0, 0, 255, 0.662);
+  margin-top: 45px;
+  padding: 90px;
+  letter-spacing: 2px;
+ }
+ .cars3 p{
+   text-align: center;
+   margin-top: -80px;
+   padding: -150px;
+ }
+ .car3-overlay{
+   background-color: rgba(204, 194, 194, 0.7);
+   opacity: 0;
+   width: 100%;
+   height: 90%;
+   margin-top: -100px;
+   border-radius: 20px;
+   
+ }
+ .cars3:hover .car3-overlay{
+   opacity: 1;
+   transition: 1s;
+ }
+ /* ........................................رابع صوره بكل معطيتها.................... */
+ .cars4{
+  width: 450px;
+  height:340px;
+  background-image: url(../images/e11.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  position: relative;
+  margin-top: 30px;
+  margin-right: 360px;
+  margin-left: -30px;
+ }
+ .cars4 .ak{
+  font-size: 25px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  color: rgba(128, 128, 128, 0.715);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-top: 130px;
+  padding: 5px;
+  margin-left: 40px;
+  background-color: white;
+
+ }
+ .cars4 .ak:hover{
+  color: red;
+  cursor: pointer;
+ }
+ .cars4 .icon4{
+  color: blue;
+  margin-top: 20px;
+  margin-left: 170px;
+  font-size: 25px;
+  cursor: pointer;
+}
+ .cars4 h2{
+  background-color: red;
+  border: 0;
+  border-radius: 20px;
+  width: 60px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  float: right;
+  margin-top: 140px;
+ margin-right: 40px;
+ }
+ .cars4 h3{
+  text-align: center;
+  font-size: 30px;
+  color: rgba(0, 0, 255, 0.662);
+  margin-top: 45px;
+  padding: 90px;
+ }
+ .cars4 p{
+   text-align: center;
+   margin-top: -80px;
+   padding: -150px;
+ }
+ .car4-overlay{
+   background-color: rgba(204, 194, 194, 0.7);
+   opacity: 0;
+   width: 90%;
+   height: 70%;
+   margin-top:-100px;
+   border-radius: 20px;
+   margin-left: 20px;
+ }
+ .cars4:hover .car4-overlay{
+   opacity: 1;
+   transition: 1s;
+ }
+ /* ..........................................................الصوره الخامسه بكل معطياتها............................. */
+ .cars5{
+  width: 440px;
+  height:330px;
+  background-image: url(../images/la7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+  position: relative;
+  margin-top: -370px;
+  margin-right: 470px;
+ }
+ .cars5 .as{
+  font-size: 25px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  color: rgba(128, 128, 128, 0.715);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-top: 130px;
+  padding: 5px;
+  margin-left: 30px;
+  background-color: white;
+ }
+ .cars5 .as:hover{
+  color: red;
+  cursor: pointer;
+ }
+ .cars5 .icon5{
+  color: blue;
+  margin-top: 20px;
+  margin-left: 170px;
+  font-size: 25px;
+  cursor: pointer;
+}
+ .cars5 h2{
+  background-color: rgb(0, 4, 255);
+  border: 0;
+  border-radius: 20px;
+  width: 60px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  float: right;
+  margin-top: 135px;
+ margin-right: 30px;
+ }
+ .cars5 h3{
+  text-align: center;
+  font-size: 30px;
+  color: rgba(0, 0, 255, 0.662);
+  margin-top: 45px;
+  padding: 90px;
+ }
+ .cars5 p{
+   text-align: center;
+   margin-top: -80px;
+   padding: -150px;
+ }
+ .car5-overlay{
+   background-color: rgba(204, 194, 194, 0.7);
+   opacity: 0;
+   width: 95%;
+   height: 80%;
+   margin-top: -100px;
+   border-radius: 20px;
+   margin-left:15px;
+ }
+ .cars5:hover .car5-overlay{
+   opacity: 1;
+   transition: 1s;
+ }
+ /* ..............................................الصوره السادسه بكل معطياطها........................ */
+ .cars6{
+  
+  width: 390px;
+  height:300px;
+  background-image: url(../images/ad.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  position: relative;
+  margin-top: -290px;
+  margin-left:990px;
+ }
+ .cars6 .ab{
+  font-size: 25px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  color: rgba(128, 128, 128, 0.715);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-top: 30px;
+  padding: 5px;
+  margin-left: 30px;
+  background-color: white;
+ }
+ .cars6 .ab:hover{
+  color: red;
+  cursor: pointer;
+ }
+ .cars6 .icon6{
+  color: blue;
+  margin-top: 20px;
+  margin-left: 170px;
+  font-size: 25px;
+  cursor: pointer;
+}
+ .cars6 h2{
+  background-color: red;
+  border: 0;
+  border-radius: 20px;
+  width: 60px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  float: right;
+  margin-top: 35px;
+ margin-right: 30px;
+ }
+ .cars6 h3{
+  text-align: center;
+  font-size: 30px;
+  color: rgba(0, 0, 255, 0.662);
+  margin-top: 45px;
+  padding: 90px;
+ }
+ .cars6 p{
+   text-align: center;
+   margin-top: -80px;
+   padding: -150px;
+ }
+ .car6-overlay{
+  background-color: rgba(204, 194, 194, 0.7);
+  opacity: 0;
+  width: 100%;
+  height: 80%;
+  margin-top: -100px;
+  border-radius: 20px;
+  margin-left:10px;
+}
+.cars6:hover .car6-overlay{
+  opacity: 1;
+  transition: 1s;
+}
+ /* .....................................................................features  من اول ال........................................ */
+.title4{
+  text-align: center;
+  margin-top: 650px;
+  font-size: 45px;
+  color: rgba(3, 125, 255, 0.998);
+}
+.line4{
+  width: 150px;
+    height: 3px;
+    background-color:rgba(3, 125, 255, 0.998) ;
+    margin: auto;
+    border-radius: 50%;
+}
+.contener-feature{
+  width: 90%;
+  margin: auto;
+}
+/* ....................................................اول بوردر......................... */
+.feature-border{
+  width: 370px;
+  height: 170px;
+  background-color: rgba(217, 209, 209, 0.614);
+  border-top:3px solid rgba(3, 125, 255, 0.998) ;
+  float: left;
+  position: relative;
+}
+.feature-border i{
+  font-size: 30px;
+  margin: 15px 15px;
+  color: rgba(9, 65, 249, 0.826);
+}
+.feature-border h2{
+  margin: -38px 70px;
+}
+.feature-border p{
+  margin-top:60px;
+  margin-left: 70px;
+  color:gray ;
+  font-size: 17px;
+}
+.feature-border::after{
+  content: "";
+  position: absolute;
+  width:0;
+  height:0 ;
+  top:0 ;
+  left:0 ;
+  background-color: black;
+  transition: 1s;
+ }
+ .feature-border:hover::after{
+  width:100% ;
+  height:100% ;
+  border-bottom:3px solid rgba(3, 125, 255, 0.998) ;
+ }
+ .feature-text{
+  position: relative;
+  z-index: 40;
+ }
+ .feature-border:hover h2{
+  color: white;
+  transition: 2s;
+}
+.feature-border:hover p{
+  color: white;
+  transition: 3s;
+}
+
+/* .........................................................تاني بوردر................... */
+.feature-border2{
+  width: 370px;
+  height: 170px;
+  background-color: rgba(217, 209, 209, 0.614);
+  border-top:3px solid rgba(3, 125, 255, 0.998) ;
+  float: left;
+  margin-left: 128px;
+  position: relative;
+}
+.feature-border2 i{
+  font-size: 30px;
+  margin: 15px 15px;
+  color: rgba(9, 65, 249, 0.826);
+}
+.feature-border2 h2{
+  margin: -38px 70px;
+}
+.feature-border2 p{
+  margin-top:60px;
+  margin-left: 70px;
+  color:gray ;
+  font-size: 17px;
+}
+.feature-border2::after{
+  content: "";
+  position: absolute;
+  width:0;
+  height:0 ;
+  top:0 ;
+  left:0 ;
+  background-color: black;
+  transition: 1s;
+ }
+ .feature-border2:hover::after{
+  width:100% ;
+  height:100% ;
+  border-bottom:3px solid rgba(3, 125, 255, 0.998) ;
+ }
+ .feature-border2:hover h2{
+  color: white;
+  transition: 2s;
+}
+.feature-border2:hover p{
+  color: white;
+  transition: 3s;
+}
+/* ......................................................تالت بوردر....................... */
+.feature-border3{
+  width: 370px;
+  height: 170px;
+  background-color: rgba(217, 209, 209, 0.614);
+  border-top:3px solid rgba(3, 125, 255, 0.998) ;
+  float: left;
+  margin-left: 120px;
+  position: relative;
+}
+.feature-border3 i{
+  font-size: 30px;
+  margin: 15px 15px;
+  color: rgba(9, 65, 249, 0.826);
+}
+.feature-border3 h2{
+  margin: -38px 70px;
+}
+.feature-border3 p{
+  margin-top:60px;
+  margin-left: 75px;
+  color:gray ;
+  font-size: 17px;
+}
+.feature-border3::after{
+  content: "";
+  position: absolute;
+  width:0;
+  height:0 ;
+  top:0 ;
+  left:0 ;
+  background-color: black;
+  transition: 1s;
+ }
+ .feature-border3:hover::after{
+  width:100% ;
+  height:100% ;
+  border-bottom:3px solid rgba(3, 125, 255, 0.998) ;
+ }
+ .feature-border3:hover h2{
+  color: white;
+  transition: 2s;
+}
+.feature-border3:hover p{
+  color: white;
+  transition: 3s;
+}
+/* ......................................................رابع بوردر...................... */
+.feature-border4{
+  width: 370px;
+  height: 170px;
+  background-color: rgba(217, 209, 209, 0.614);
+  border-top:3px solid rgba(3, 125, 255, 0.998) ;
+  float: left;
+  margin-top: 100px;
+  position: relative;
+}
+.feature-border4 i{
+  font-size: 30px;
+  margin: 15px 15px;
+  color: rgba(9, 65, 249, 0.826);
+}
+.feature-border4 h2{
+  margin: -38px 70px;
+}
+.feature-border4 p{
+  margin-top:60px;
+  margin-left: 75px;
+  color:gray ;
+  font-size: 17px;
+}
+.feature-border4::after{
+  content: "";
+  position: absolute;
+  width:0;
+  height:0 ;
+  top:0 ;
+  left:0 ;
+  background-color: black;
+  transition: 1s;
+ }
+ .feature-border4:hover::after{
+  width:100% ;
+  height:100% ;
+  border-bottom:3px solid rgba(3, 125, 255, 0.998) ;
+ }
+ .feature-border4:hover h2{
+  color: white;
+  transition: 2s;
+}
+.feature-border4:hover p{
+  color: white;
+  transition: 3s;
+}
+/* .........................................................خامس بوردر.................. */
+.feature-border5{
+  width: 370px;
+  height: 170px;
+  background-color: rgba(217, 209, 209, 0.614);
+  border-top:3px solid rgba(3, 125, 255, 0.998) ;
+  float: left;
+  margin-left: 128px;
+  margin-top:100px ;
+  position: relative;
+}
+.feature-border5 i{
+  font-size: 30px;
+  margin: 15px 15px;
+  color: rgba(9, 65, 249, 0.826);
+}
+.feature-border5 h2{
+  margin: -38px 70px;
+}
+.feature-border5 p{
+  margin-top:60px;
+  margin-left: 75px;
+  color:gray ;
+  font-size: 17px;
+}
+.feature-border5::after{
+  content: "";
+  position: absolute;
+  width:0;
+  height:0 ;
+  top:0 ;
+  left:0 ;
+  background-color: black;
+  transition: 1s;
+ }
+ .feature-border5:hover::after{
+  width:100% ;
+  height:100% ;
+  border-bottom:3px solid rgba(3, 125, 255, 0.998) ;
+ }
+ .feature-border5:hover h2{
+  color: white;
+  transition: 2s;
+}
+.feature-border5:hover p{
+  color: white;
+  transition: 3s;
+}
+/* .........................................................سادس بوردر......................... */
+.feature-border6{
+  width: 370px;
+  height: 170px;
+  background-color: rgba(217, 209, 209, 0.614);
+  border-top:3px solid rgba(3, 125, 255, 0.998) ;
+  float: left;
+  margin-left: 120px;
+  margin-top: 100px;
+  position: relative;
+}
+.feature-border6 i{
+  font-size: 30px;
+  margin: 15px 15px;
+  color: rgba(9, 65, 249, 0.826);
+}
+.feature-border6 h2{
+  margin: -38px 70px;
+  position: relative;
+}
+.feature-border6 p{
+  margin-top:60px;
+  margin-left: 75px;
+  color:gray ;
+  font-size: 17px;
+}
+.feature-border6::after{
+  content: "";
+  position: absolute;
+  width:0;
+  height:0 ;
+  top:0 ;
+  left:0 ;
+  background-color: black;
+  transition: 1s;
+ }
+ .feature-border6:hover::after{
+  width:100% ;
+  height:100% ;
+  border-bottom:3px solid rgba(3, 125, 255, 0.998) ;
+ }
+ .feature-border6:hover h2{
+  color: white;
+  transition: 2s;
+}
+.feature-border6:hover p{
+  color: white;
+  transition: 3s;
+}
+ /* ..............................................................SHOOSES............................. */
+ .choose-contener{
+  width: 100%;
+  height: 600px;
+  background-color: rgba(217, 209, 209, 0.47);
+  margin-top: 570px;
+  /* position: relative; */
+ }
+ .choose-us{
+  padding: 185px 190px;
+  font-size: 25px;
+ }
+ .choose-line{
+  width: 200px;
+  height: 4px;
+  background-color: rgba(3, 125, 255, 0.998);
+  border-radius: 70%;
+  margin: 10px  5px;
+ }
+ .choose-us p{
+  font-size: 18px;
+  line-height: 30px;
+  color: gray;
+  text-transform: capitalize;
+ }
+ .choose-us h3{
+  font-size: 19px;
+  margin-top: 30px;
+  color: gray;
+ }
+ .choose-us span{
+  color: rgba(3, 125, 255, 0.998);
+ }
+ .choose-us i{
+  color:white;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(3, 125, 255, 0.998);
+  border-radius: 50%;
+  font-size: 8px;
+  padding: 5px;
+  
+ }
+ .choose-us img{
+  float: right;
+  margin-top: -350px;
+  border-radius: 50%;
+  border: 10px solid rgba(31, 75, 122, 0.998);
+  border-left: 10px solid red;
+  border-right: 10px solid rgb(234, 0, 255);
+ }
+  .polet-polet{
+  float: right;
+  margin-right: -230px;
+ } 
+ .polet li{
+  background-color: rgba(128, 128, 128, 0.566);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  float: right;
+  margin-left: 10px;
+  list-style: none;
+  margin-top: 40px;
+  cursor: pointer;
+ }
+ .polet li:hover{
+   background-color: rgba(3, 125, 255, 0.998);
+ }
+ /* .............................................................attachment1..................................... */
+ .attachment1{
+  width: 100%;
+  height: 420px;
+  background-image: url(../images/z3.jpg);
+  margin-top: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+ }
+ .attachment-overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+ }
+ .attachment1 i:hover{
+  color: brown;
+ }
+ /* ...............................اول ايقون بالتكست اللي تحته..................... */
+ .attachment1 .sx{
+  position: absolute;
+  margin-top: -230px  ;
+  color: rgba(0, 119, 255, 0.79);
+margin-left: 230px;
+font-size: 40px;
+cursor: pointer;
+ }
+ .attachment1 h2{
+  position: absolute;
+  margin-top: -180px  ;
+  color: white;
+margin-left: 220px;
+font-size: 19px;
+letter-spacing: 4px;
+text-align: center;
+ }
+ /* ..........................................تاني ايقون بالتكست اللي تحته................. */
+ .attachment1 .ss{
+  position: absolute;
+  margin-top: -230px  ;
+  color: rgba(0, 119, 255, 0.79);
+margin-left: 510px;
+font-size: 40px;
+cursor: pointer;
+ }
+  .attachment1 .nn{
+    margin-left: 480px;
+    text-align: center;
+  } 
+  /* ..........................................تالت ايقون بالتكست اللي تحته..................... */
+ .attachment1 .hh{
+  position: absolute;
+  margin-top: -230px  ;
+  color: rgba(0, 119, 255, 0.79);
+margin-left: 810px;
+font-size: 40px;
+cursor: pointer;
+ }
+ .attachment1 .na{
+  margin-left: 800px;
+  text-align: center;
+ }
+ /* .........................................رابع ايقون بالتكست اللي تحته........................ */
+ .attachment1 .gg{
+  position: absolute;
+  margin-top: -230px  ;
+  color: rgba(0, 119, 255, 0.79);
+margin-left: 1100px;
+font-size: 40px;
+cursor: pointer;
+ }
+ .attachment1 .cc{
+  margin-left: 1070px;
+  text-align: center;
+ }
+ /* ........................................................subscriptions    ال...................................... */
+ /* ...............................نا رابطهم كلهم ببعض يعني بعمل اول صوره والباقي بياخد زيهاا.................. */
+ .subscriptions{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/ll.jpg);
+  margin-top: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+ }
+ .subscriptions-oyerlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+ }
+ .subscriptions h2{
+  padding: 80px;
+  font-size: 37px;
+  color: rgba(0, 60, 255, 0.721);
+ }
+ .subscriptions-line{
+  width: 200px;
+  height: 4px;
+  background-color:rgba(0, 60, 255, 0.721) ;
+  margin: auto;
+  margin-top: -75px;
+  border-radius: 50%;
+ }
+ .subscriptions-img1{
+  width: 320px;
+  height: 400px;
+  background-image: url(../images/n.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  margin-left: 140px;
+  margin-top: 100px;
+  border-bottom: 2px solid rgb(0, 124, 128);
+  position: relative;
+  border-radius: 10px;
+ }
+ .subscriptions-img1::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 2s;
+  border-radius: 10px;
+ }
+ .subscriptions-img1:hover::after{
+  width: 100%;
+  height: 100%;
+ }
+ .subscriptions-img1 h3{
+  margin-top: 30px;
+  color: skyblue;
+  font-size: 25px;
+ }
+ .subscriptions-img1 h4{
+  color: skyblue;
+  font-size: 25px;
+  margin-top: 50px;
+ }
+ .subscriptions-img1 p{
+ width: 100px;
+ height: 100px;
+ border: 2px solid skyblue;
+ border-radius: 50%;
+ margin: auto;
+ margin-top: -80px;
+ }
+ .subscriptions-img1 span{
+  color: skyblue;
+ }
+ .subscriptions-img1 button{
+  color: white;
+    background-color:skyblue;
+    border-radius: 10px;
+    width: 130px;
+    height: 30px;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+ }
+ .subscriptions-img1 button:hover{
+  opacity: 0.9;
+ }
+ .z-index{
+  position: relative;
+  z-index: 500;
+ }
+ /* ........................................................Average and High........................................... */
+.performance{
+  width: 100%;
+  height: 450px;
+  background-image: url(../images/vv.jpg);
+  margin-top: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.performance-overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.performance-img img{
+ border-radius: 50%;
+ margin: 130px 240px;
+}
+.performance-img h3{
+  color: white;
+  margin-top: -215px;
+  margin-left: 360px;
+  font-size: 25px;
+  
+}
+.performance-img h3 span{
+font-size: 19px;
+color: aquamarine;
+}
+.performance-img p{
+  margin: 30px 360px;
+  color: white;
+  font-size: 18px;
+}
+/* ........................................................... */
+.performance-img2 img{
+  border-radius: 50%;
+  margin: -25px 880px ;
+  position: absolute;
+}
+.performance-img2 h3{
+  color: white;
+  margin-top: -230px;
+  font-size: 25px; 
+  position: relative;
+  left: 1000px;
+}
+.performance-img2 h3 span{
+  font-size: 19px;
+  color: aquamarine;
+  }
+  .performance-img2 p{
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 1000px;
+    top: 30px;
+  }
+/* .................................................processors-contener.................................... */
+.processors-contener{
+  width: 100%;
+  height: 670px;
+  background-image: url(../images/gv3.jpeg);
+  margin-top: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.processors-contener h3{
+  color: rgba(0, 119, 255, 0.79);
+  text-align: center;
+  margin-top: 80px;
+  font-size: 30px;
+  position: absolute;
+  margin-left: 600px;
+}
+.line-ll{
+  width: 200px;
+  height: 4px;
+  background-color: rgba(0, 119, 255, 0.79);
+  border-radius: 50%;
+  margin-left: 630px;
+  margin-top: 120px;
+  position: absolute;
+}
+.processors-overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* .................................................processors-item1.................................. */
+
+.processors-contener1{
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+.processors-item{
+  float: left;
+  width: 27.5%;
+  background-color: gray;
+  padding: 14px 14px;
+  text-align: center;
+  margin-top: 250px;
+  position: relative;
+  z-index: 1000;
+  border-radius: 20px;
+}
+.center{
+  margin: 0 5%;
+  margin-top: 250px;
+  z-index: 1000;
+  position: relative;
+  border-radius: 20px;
+}
+.processors-item::after{
+content: "";
+position: absolute;
+width: 100%;
+height: 0;
+top: 0;
+left: 0;
+transition: 2s;
+background-color: rgba(0, 0, 0, 0.7);
+border-radius: 20px;
+}
+.processors-item:hover::after{
+  width: 100%;
+  height: 100%;
+}
+.processors-item::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom:  0;
+  left: 0;
+  transition: 2s;
+  background-color: rgba(0, 81, 255, 0.603);
+  opacity: 1;
+  border-radius: 20px;
+  }
+  .processors-item:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+.processors-img{
+  width: 95%;
+  margin: auto;
+  position: relative;
+}
+.processors-img img{
+  width: 100%;
+}
+.processors-overlay1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  opacity: 0;
+  transition: 2s;
+  z-index: 1500;
+}
+.processors-item:hover .processors-overlay1{
+  visibility: visible;
+  opacity: 1;
+}
+.processors-overlay1 a{
+  display: block;
+  font-size: 25px;
+  margin-left: auto;
+  width: 25px;
+  height: 25px;
+  margin-top: 7px;
+  border-radius: 50%;
+  background-color: blue;
+  padding: 5px;
+}
+.processors-overlay1 a i{
+  color: white;
+  line-height: 40px;
+  margin-top: -10px;
+}
+.processors-info{
+  color: white;
+  padding: 5px;
+  z-index: 1500;
+  position: relative;
+}
+.processors-info h2{
+  letter-spacing: 3px;
+}
+.processors-info p{
+  color: burlywood;
+  text-transform: uppercase;
+}
+/* .......................................Distinctive-cars............................................................ */
+.Distinctive-car h2{
+  text-align: center;
+  color: rgba(0, 119, 255, 0.79);
+  margin-top: 150px;
+  font-size: 35px;
+}
+.Distinctive-line{
+  width: 200px;
+  height: 4px;
+  margin: auto;
+  background-color:rgba(0, 119, 255, 0.79) ;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.Distinctive-cars{
+  width: 350px;
+  height: 500px;
+  margin: 70px 77px;
+  border-top: 2px solid blue;
+  border-bottom: 2px solid blue;
+  position: relative;
+  text-align: center;
+  float: left;
+}
+.Distinctive-cars::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(35, 162, 212, 0.511);
+  transition: 2s;
+}
+.Distinctive-cars:hover::after{
+  width: 100%;
+  height: 100%;
+}
+.Distinctive-img img{
+  border-radius: 20px;
+  margin: 20px 50px;
+  
+}
+.Distinctive-text h3{
+  color: brown;
+  /* margin-left: 70px; */
+  font-size: 25px;
+  position: relative;
+  /* z-index: 20; */
+}
+.Distinctive-text p{
+  color:green;
+  margin: 5px 90px;
+  font-size: 20px;
+  position: relative;
+  /* z-index: 20; */
+}
+.Distinctive-text span{
+color: aqua;
+margin-left: -15px;
+}
+.Distinctive-text input{
+  width: 250px;
+  height: 30px;
+  position: relative;
+  background-color: rgba(135, 207, 235, 0.372);
+  position: relative;
+  z-index: 20;
+  border-radius: 7px;
+}
+.Distinctive-text textarea{
+  margin-top: 10px;
+  position: relative;
+  z-index: 20;
+  background-color: rgba(135, 207, 235, 0.372);
+  border-radius: 5px;
+}
+.Distinctive-text button{
+  width: 90px;
+  height: 27px;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  margin: 10px 70px;
+  background-color: rgb(50, 205, 50);
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+}
+.Distinctive-text button:hover{
+  color: black;
+}
+/* .........................................Social................................... */
+.Social{
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/odh.jpg);
+  margin-top: 750px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Social-overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.Social img{
+  position: absolute;
+  margin-top: -450px;
+  margin-left: 650px;
+  border-radius: 50%;
+}
+.Social h2{
+  position: absolute;
+  margin-left: 620px;
+  margin-top: -280px;
+  color: white;
+}
+.social-line{
+  width: 150px;
+  height: 3px;
+  background-color: aqua;
+  margin: -240px 670px;
+  border-radius: 50%;
+}
+.lot i {
+  color: white;
+  margin-top: 320px;
+  margin-left: 550px ;
+  float: left;
+  font-size: 30px;
+}
+.lot i:hover{
+  color: blue;
+}
+.lot2 i {
+  color: white;
+  margin-top: 320px;
+  margin-left: 50px ;
+  float: left;
+  font-size: 30px;
+}
+.lot2 i:hover{
+  color: blue;
+}
+.lot3 i {
+  color: white;
+  margin-top: 320px;
+  margin-left: 50px ;
+  float: left;
+  font-size: 30px;
+}
+.lot3 i:hover{
+  color: blue;
+}
+.lot4 i {
+  color: white;
+  margin-top: 320px;
+  margin-left: 50px ;
+  float: left;
+  font-size: 30px;
+}
+.lot4 i:hover{
+  color: blue;
+}
+.lot5 i {
+  color: white;
+  margin-top: 320px;
+  margin-left: 50px ;
+  float: left;
+  font-size: 30px;
+}
+.lot5 i:hover{
+  color: blue;
+}
+.lot6 i {
+  color: white;
+  margin-top: 320px;
+  margin-left: 50px ;
+  float: left;
+  font-size: 30px;
+}
+.lot6 i:hover{
+  color: blue;
+}
+.lot7{
+  margin-top: 390px;
+  color: white;
+  position: relative;
+  left: 550px;
+}
+.lot7 h2{
+  width: 100%;
+  margin-top: -22px;
+  margin-left: 22px;
+  font-size: 20px;
+}
+.lot7 span{
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+  font-size: 20px;
+}
